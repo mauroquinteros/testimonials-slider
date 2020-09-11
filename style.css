@@ -1,0 +1,151 @@
+/* --- Font --- */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap");
+/* --- Variables --- */
+:root {
+  --quotes-width: 12rem;
+  --light-clr: #ffffff;
+  --buttons-width: 8rem;
+  --buttons-height: 4rem;
+  --grayish-blue-clr: hsl(240, 18%, 77%);
+  --dark-blue-clr: hsl(240, 38%, 20%);
+}
+/* --- Globals Styles --- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-family: "Inter", sans-serif;
+}
+p {
+  margin: 0;
+}
+figure {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  position: relative;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  padding: 1.6rem;
+}
+/* --- Utils --- */
+.bg {
+  z-index: -1;
+}
+.curve-bg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+}
+.figures-bg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.quotes-bg {
+  --width-position: calc(var(--quotes-width) / 2);
+  position: absolute;
+  width: var(--quotes-width);
+  left: calc(50% - var(--width-position));
+}
+/* --- Slider Image --- */
+.slider--image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+}
+.photo--container {
+  position: relative;
+  width: 70%;
+  height: 70%;
+  box-shadow: -0.2rem 2.5rem 4.5rem -3.1rem rgba(39, 39, 107, 1);
+}
+.photo--container img {
+  width: 100%;
+  height: 100%;
+}
+.buttons--container {
+  --width-position: calc(var(--buttons-width) / 2);
+  --height-position: calc(var(--buttons-height) / 2);
+  position: absolute;
+  width: var(--buttons-width);
+  height: var(--buttons-height);
+  bottom: calc(var(--height-position) * -1);
+  left: calc(50% - var(--width-position));
+  background-color: var(--light-clr);
+  font-size: 0;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+.button--arrow {
+  height: 100%;
+  width: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-color: var(--light-clr);
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.button--arrow#prev {
+  background-image: url("./images/icon-prev.svg");
+}
+.button--arrow#next {
+  background-image: url("./images/icon-next.svg");
+}
+/* --- Slider Description --- */
+.slider--description {
+  position: relative;
+  padding-top: 3rem;
+  width: 100%;
+  height: 50%;
+  text-align: center;
+}
+.slider--description-testimonial {
+  padding-top: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: var(--dark-blue-clr);
+}
+.slider--description-name {
+  margin-top: 1.5rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--dark-blue-clr);
+}
+.slider--description-career {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: var(--grayish-blue-clr);
+}
+@media screen and (min-width: 375px) {
+  .slider--description-testimonial {
+    font-size: 1.9rem;
+  }
+  .slider--description-name {
+    font-size: 1.6rem;
+  }
+  .slider--description-career {
+    font-size: 1.6rem;
+  }
+}
