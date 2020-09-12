@@ -15,14 +15,24 @@
           alt="pattern bg"
         />
         <figure class="photo--container">
-          <img src="./images/image-tanya.jpg" alt="image-tanya" />
+          <img
+            id="tanya-image"
+            src="./images/image-tanya.jpg"
+            alt="image-tanya"
+          />
+          <img
+            class="none"
+            id="john-image"
+            src="./images/image-john.jpg"
+            alt="image-john"
+          />
           <div class="buttons--container">
             <button id="prev" class="button--arrow"></button>
             <button id="next" class="button--arrow"></button>
           </div>
         </figure>
       </section>
-      <section class="slider--description">
+      <section id="first-description" class="slider--description">
         <img
           class="quotes-bg bg"
           src="./images/pattern-quotes.svg"
@@ -38,12 +48,28 @@
           <p class="slider--description-career">UX Engineer</p>
         </div>
       </section>
+      <section id="second-description" class="slider--description none">
+        <img
+          class="quotes-bg bg"
+          src="./images/pattern-quotes.svg"
+          alt="pattern quotes bg"
+        />
+        <p class="slider--description-testimonial">
+          “If you want to lay the best foundation possible I’d recommend taking
+          this course. The depth the instructors go into is incredible. I now
+          feel so confident about starting up as a professional developer.”
+        </p>
+        <div class="slider--description-info">
+          <p class="slider--description-name">John Tarkporr</p>
+          <p class="slider--description-career">Junior Front-end Developer</p>
+        </div>
+      </section>
+      <script src="./app.js"></script>
       <img
         class="curve-bg bg"
         src="./images/pattern-curve.svg"
         alt="pattern curve bg"
       />
     </div>
-    <script src="./app.js"></script>
   </body>
 </html>

@@ -81,8 +81,12 @@ figure {
   box-shadow: -0.2rem 2.5rem 4.5rem -3.1rem rgba(39, 39, 107, 1);
 }
 .photo--container img {
+  display: block;
   width: 100%;
   height: 100%;
+}
+.photo--container img.none {
+  display: none;
 }
 .buttons--container {
   --width-position: calc(var(--buttons-width) / 2);
@@ -118,11 +122,15 @@ figure {
 }
 /* --- Slider Description --- */
 .slider--description {
+  display: block;
   position: relative;
   padding-top: 3rem;
   width: 100%;
   height: 50%;
   text-align: center;
+}
+.slider--description.none {
+  display: none;
 }
 .slider--description-testimonial {
   padding-top: 1.5rem;
