@@ -2,7 +2,7 @@
 
 ![Design preview for the Coding Bootcamp Testimonials Slider coding challenge](./design/desktop-preview.jpg)
 
-## Bienvenida/o 👋
+## Reto de CSS 👋
 
 Los retos que encontarás semana a semana permiten mejorar tus habilidades en un flujo de trabajo de la vida real.
 
